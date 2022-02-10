@@ -9,12 +9,15 @@
 nav {
     width: 100%;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba( 0, 0, 0, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
     position: fixed;
 }
 
 nav>div {
-    width: 85%;
+    width: 80%;
     height: 100%;
     margin: auto;
 }
@@ -26,7 +29,15 @@ ul#nav-right {
 
 ul#nav-right>li {
     float: left;
-    margin-left: 10px;
+    margin-top: 18px;
+}
+
+ul#nav-right>li>a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 10px;
+    font-size: larger;
+    font-family: 'Rowdies', cursive;
 }
 
 a#brand {
@@ -43,4 +54,31 @@ header {
     background-size: 100%;
     width: 100%;
     height: 93vh;
+    display: inline-block;
+}
+
+div#welcome-texts {
+    position: absolute;
+    right: 0; bottom: 25%;
+    width: min-content;
+    text-align: right;
+}
+
+div#welcome-texts>h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+div#welcome-texts>a {
+    font-size: xx-large;
+}
+
+.shadowed-blackbackground-white-text {
+    color: #ffffff;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    text-shadow: 3px 3px 6px #000000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
 }
