@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #eeeeee;
+}
+
 nav {
     width: 100%;
     height: 60px;
@@ -14,6 +18,7 @@ nav {
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     position: fixed;
+    z-index: 2;
 }
 
 nav>div {
@@ -51,9 +56,9 @@ a#brand {
 header {
     background-image: url("background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     display: inline-block;
 }
 
@@ -74,11 +79,100 @@ div#welcome-texts>a {
 }
 
 .shadowed-blackbackground-white-text {
-    color: #ffffff;
-    background-color: rgba( 0, 0, 0, 0.5 );
+    color: #eaeaea;
     text-shadow: 3px 3px 6px #000000;
     text-decoration: none;
     display: inline-block;
     padding: 15px;
     font-family: 'Playfair Display', serif;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+h1.section-title {
+    width: max-content;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+    border-bottom: 5px solid #000000;
+}
+
+.card-slider {
+    margin-bottom: 1000px;
+    width: 100%;
+    height: 350px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.card-wrapper {
+    width: 1250px;
+    height: 350px;
+    margin: auto;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 230px;
+    height: 280px;
+    border-radius: 35px;
+    background: #ffffff;
+    box-shadow:  20px 20px 77px #d9d9d9,
+               -20px -20px 77px #ffffff;
+    padding: 10px;
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+
+.card-header {
+    height: max-content;
+    width: 230px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    width: 230px;
+    height: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 15px;
+    height: 100px;
+    width: 230px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0.639093137254902) 100%);
+    color: #d35400;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-arrow {
+    color: #000000;
+    border-radius: 100%;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 77px #d9d9d9,
+               -20px -20px 77px #ffffff;
+    padding: 25px;
+    position: absolute;
+    top: 140px;
+    left: 65px;
+    z-index: 1;
 }
