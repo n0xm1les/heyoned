@@ -4,6 +4,7 @@
     border: 0;
     outline: 0;
     font-family: 'Roboto', sans-serif;
+    cursor: default;
 }
 
 body {
@@ -64,7 +65,7 @@ header {
 
 div#welcome-texts {
     position: absolute;
-    right: 0; bottom: 25%;
+    right: 0; bottom: 25px;
     width: min-content;
     text-align: right;
 }
@@ -98,81 +99,129 @@ h1.section-title {
     font-family: 'Playfair Display', serif;
     font-size: xx-large;
     border-bottom: 5px solid #000000;
-}
-
-.card-slider {
-    margin-bottom: 1000px;
-    width: 100%;
-    height: 350px;
-    background-color: #ffffff;
-    margin-top: 10px;
-    display: inline-block;
-    position: relative;
+    margin-bottom: 25px;
 }
 
 .card-wrapper {
-    width: 1250px;
-    height: 350px;
-    margin: auto;
-    /* overflow: hidden; */
+    width: 100%;
+    height: min-content;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 0;
+    margin-bottom: 25px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .card {
-    width: 230px;
-    height: 280px;
+    width: 250px;
+    height: 300px;
+    padding: 10px 25px 20px 25px;
+    margin: 15px;
     border-radius: 35px;
     background: #ffffff;
-    box-shadow:  20px 20px 77px #d9d9d9,
-               -20px -20px 77px #ffffff;
-    padding: 10px;
+    box-shadow:  10px 10px 30px #b3b3b3,
+             -10px -10px 30px #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: relative;
-    float: left;
-    margin-right: 40px;
 }
 
 .card-header {
-    height: max-content;
-    width: 230px;
+    width: 100%;
+    height: min-content;
     text-align: center;
     margin-bottom: 10px;
 }
 
+h2.card-title {
+    font-family: 'Rowdies', cursive;
+    font-weight: 100;
+}
+
 .card-body {
-    width: 230px;
-    height: 225px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-align: justify;
 }
 
 .card-footer {
-    position: absolute;
-    bottom: 15px;
-    height: 100px;
-    width: 230px;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0.639093137254902) 100%);
-    color: #d35400;
-    text-decoration: none;
+    width: 250px;
+    height: 75px;
     font-size: x-large;
     font-weight: 700;
-    text-align: center;
+    color: #d35400;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0.639093137254902) 100%);
+    position: absolute;
+    bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.slider-arrow {
+.card-footer>i {
+    cursor: pointer;
+}
+
+.card-see-all {
+    height: max-content;
+}
+
+.card-footer-see-all {
+    position: static;
+}
+
+.quote-wrapper {
+    width: 500px;
+    height: min-content;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  22px 22px 50px #b0b0b0,
+             -22px -22px 50px #ffffff;
+    padding: 20px 0 0 0;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.quote {
+    width: 100%;
+    min-height: 100px;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #eeeeee;
+    border-radius: 5px 5px 25px 25px;
+}
+
+.quote-right {
+    text-align: right;
+    border-right: 10px solid #d35400;
+}
+
+.quote-left {
+    text-align: left;
+    border-left: 10px solid #d35400;
+}
+
+p.quote-content {
     color: #000000;
-    border-radius: 100%;
-    background-color: #ffffff;
-    box-shadow: 20px 20px 77px #d9d9d9,
-               -20px -20px 77px #ffffff;
-    padding: 25px;
-    position: absolute;
-    top: 140px;
-    left: 65px;
-    z-index: 1;
+    font-weight: bold;
+    font-size: larger;
 }
