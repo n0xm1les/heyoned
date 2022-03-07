@@ -29,7 +29,7 @@ function create_card(card_wrapper, title="Hello World!", content="Hello World!")
     p.textContent = content
     card_body.append(p)
 
-    if (content.length > 350) {
+    if (content.length > 400) {
         
         card_footer = document.createElement("div")
         card_footer.className = "card-footer"
