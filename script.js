@@ -1,4 +1,6 @@
-const imla_kurallari = [{"title": "Bağlaç Olan da / de’nin Yazılışı", "content": "Bağlaç olan da / de ayrı yazılır ve kendisinden önceki kelimenin son ünlüsüne bağlı olarak büyük ünlü uyumuna uyar: Kızı da geldi gelini de. Durumu oğluna da bildirdi. Sen de mi kardeşim? Güç de olsa. Konuşur da konuşur.\n\nUYARI: Ayrı yazılan da / de hiçbir zaman ta / te biçiminde yazılmaz: Gidip de gelmemek var, gelip de görmemek var (Gidip te gelmemek var, gelip te görmemek var değil)\n\nUYARI: Ya sözüyle birlikte kullanılan da ayrı yazılır: ya da\n\nUYARI: Da / de bağlacını kendisinden önceki kelimeden kesme ile ayırmak yanlıştır: Ayşe de geldi (Ayşe’de geldi değil). Kitabın kapağına da dikkat et (Kitabın kapağına’da dikkat et değil)."}, {"title": "Bulunma Durumu Eki -da / -de / -ta / -te’nin Yazılışı", "content": "Bulunma durumu eki getirildiği kelimeye bitişik yazılır: devede (deve-de) kulak, yolda (yol-da) kalmak, ayakta (ayak-ta) durmak, işte (iş-te) çalışmak vb.\n\nYurtta sulh, cihanda sulh. (Atatürk)"}]
+const imla_kurallari = [
+    {"title": "Alıntı Kelimelerin Yazılışı", "content": "1.Çift ünsüz harfle başlayan Batı kökenli alıntılar, ünsüzler arasına ünlü konulmadan yazılır: francala, gram, gramer, gramofon, grup, Hristiyan, kral, kredi, kritik, plan, pratik, problem, profesör, program, proje, propaganda, pro­tein, prova, psikoloji, slogan, snop, spiker, spor, staj, stil, stüdyo, trafik, tren, triptik vb.Bu tür birkaç alıntıda, söz başında veya iki ünsüz arasında bir ünlü türemiştir. Bu ünlü söylenişte de yazılışta da gösterilir: iskar­pin, iskele, iskelet, istasyon, istatistik, kulüp vb.\n\n2. İçinde yan yana iki veya daha fazla ünsüz bulunan Batı kökenli alıntılar, ünsüzler arasına ünlü konmadan yazılır: alafranga, apartman, biyografi, elektrik, gangster, kilogram, orkestra, paragraf, tel­graf vb.\n\n3. İki ünsüzle biten Batı kökenli alıntılar, ünsüzler arasına ünlü konmadan yazılır: film, form, lüks, modern, natürmort, psikiyatr, seks, slayt, teyp vb.\n\n4. Batı kökenli alıntıların içindeki ve sonundaki g ünsüzleri olduğu gibi korunur: biyografi, diyagram, dogma, magma, monografi, paragraf, program; arkeolog, demagog, diyalog, filolog, jeolog, katalog, monolog, psikolog, ürolog vb.\n\nAncak fotoğraf ve topoğraf kelimelerinde g’ler, ğ’ye döner.\n\n* * *\n\nAşağıdaki durumlarda Batı kökenli kelimeler özgün biçimleri ile ya­zılırlar:\n\n1. Bilim, sanat ve uzmanlık dallarında kullanılan bazı terimler: andante (müzik), cuprum (kimya), deseptyl (eczacılık), quercus, terminus technicus (teknik terim) vb.\n\n2. Latin yazı sistemini kullanan dillerden alınma deyim ve sözler: Veni, vidi, vici (Geldim, gördüm, yendim.); conditio sine qua non (Olmazsa olmaz.); eppur si muove (Dünya her şeye rağmen dönüyor.); to be or not to be (olmak veya olmamak); l’art pour l’art (Sanat sanat içindir.); l’Etat c’est moi (Devlet benim.); traduttore traditore (Çevirmen haindir.); persona non grata (istenmeyen kişi) vb.\n\nMesele falan değildi öyle,\n\nTo be or not to be kendisi için;\n\nBir akşam uyudu;\n\nUyanmayıverdi. (Orhan Veli Kanık)"}
+]
 
 const imla_wrp = document.getElementById("imla-wrp");
 
@@ -24,7 +26,7 @@ function create_card(card_wrapper, title="Hello World!", content="Hello World!")
 
     card_body = document.createElement("div")
     card_body.className = "card-body"
-    p = document.createElement("p")
+    p = document.createElement("pre")
     p.className = "card-content"
     p.textContent = content
     card_body.append(p)
@@ -82,6 +84,32 @@ function create_card(card_wrapper, title="Hello World!", content="Hello World!")
 
 function main() {
     generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, imla_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
+    generate_card(imla_kurallari, noktalama_wrp)
     
 }
 

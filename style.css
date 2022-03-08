@@ -106,7 +106,6 @@ h1.section-title {
     width: 100%;
     height: min-content;
     background-color: #ffffff;
-    overflow: hidden;
     padding: 20px 0;
     margin-bottom: 25px;
     display: flex;
@@ -130,6 +129,7 @@ h1.section-title {
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
+    transition: height 2s, width 2s;
 }
 
 .card-header {
@@ -153,6 +153,10 @@ h2.card-title {
     text-overflow: ellipsis;
 }
 
+.card-body>pre {
+    white-space: pre-wrap;
+}
+
 .card-footer {
     width: 250px;
     height: 75px;
@@ -174,7 +178,12 @@ h2.card-title {
 }
 
 .card-see-all {
-    height: max-content;
+    height: 500px;
+    width: 500px;
+}
+
+.card-see-all>.card-body {
+    overflow-y: scroll;
 }
 
 .card-footer-see-all {
@@ -190,7 +199,7 @@ h2.card-title {
              -22px -22px 50px #ffffff;
     padding: 20px 0 0 0;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -224,4 +233,74 @@ p.quote-content {
     color: #000000;
     font-weight: bold;
     font-size: larger;
+}
+
+section#aboutme {
+    width: 1000px;
+    height: min-content;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  22px 22px 50px #b0b0b0,
+             -22px -22px 50px #ffffff;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#my-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#my-name {
+    width: max-content;
+    margin: auto;
+    font-family: 'Supermercado One', cursive;
+    font-size: xx-large;
+}
+
+#my-title {
+    width: max-content;
+    margin: auto;
+    font-size: medium;
+}
+
+#my-picture {
+    width: 300px;
+    height: 300px;
+    background-image: url("/me.jpg");
+    background-clip: border-box;
+    background-size: 300px 400px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+
+#aboutme-content {
+    margin-left: 25px;
+    text-align: justify;
+    font-size: large;
+}
+
+#aboutme-content>p {
+    text-indent: 20px;
+}
+
+footer {
+    width: 100%;
+    height: min-content;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
 }
