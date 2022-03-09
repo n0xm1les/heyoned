@@ -195,7 +195,7 @@ h2.card-title {
 }
 
 .quote-wrapper {
-    width: 500px;
+    width: 750px;
     height: min-content;
     border-radius: 25px;
     background: #ffffff;
@@ -207,11 +207,12 @@ h2.card-title {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 .quote {
     width: 100%;
-    min-height: 100px;
+    min-height: 150px;
     height: max-content;
     box-sizing: border-box;
     padding: 0 10px;
@@ -288,6 +289,8 @@ section#aboutme {
     background-position: 0px 0px;
     background-repeat: no-repeat;
     border-radius: 100%;
+    box-shadow:  10px 10px 25px #b0b0b0,
+             -10px -10px 25px #ffffff;
 }
 
 #aboutme-content {
@@ -307,4 +310,23 @@ footer {
     text-align: center;
     background-color: #000000;
     color: #ffffff;
+}
+
+.btn {
+    padding: 25px 10px;
+    background-color: #d35400;
+    color: #ffffff;
+    font-size: x-large;
+    font-family: 'Rowdies', cursive;
+    text-decoration: none;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow:  10px 10px 25px #b0b0b0,
+             -10px -10px 25px #ffffff;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: fit-content;
+    width: fit-content;
 }
