@@ -315,6 +315,14 @@ section#aboutme {
     position: relative;
 }
 
+@media only screen and (min-width: 1350px) {
+    section#aboutme {width: 1250px;}
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1350px) {
+    section#aboutme {width: 1000px;}
+}
+
 #me {
     display: flex;
     flex-direction: row;
@@ -367,7 +375,7 @@ section#aboutme {
 #social-wrapper {
     width: 100%;
     height: 50px;
-    margin: 15px 0 5px 0;
+    margin: 20px 0 5px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
